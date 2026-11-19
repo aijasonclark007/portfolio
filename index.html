@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jason Clark O. Somera | Portfolio</title>
+<meta name="description" content="Portfolio of Jason Clark O. Somera: social media, marketing automation, and website projects.">
+<style>
+  :root { --ink:#1b1f24; --muted:#5b6470; --line:#e3e7ec; --accent:#1F4E79; --bg:#ffffff; --soft:#f5f7fa; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  header.top { border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(255,255,255,.95); backdrop-filter: blur(6px); z-index:10; }
+  header.top .wrap { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .brand { font-weight:700; text-decoration:none; color:var(--ink); }
+  nav a { margin-left:20px; text-decoration:none; color:var(--muted); font-size:15px; }
+  nav a:hover { color:var(--accent); }
+  .hero { padding: 80px 0 56px; }
+  .hero h1 { font-size: 40px; line-height:1.15; margin:0 0 12px; letter-spacing:-0.01em; }
+  .hero p.lead { font-size: 19px; color: var(--muted); max-width: 680px; margin: 0 0 24px; }
+  .btn { display:inline-block; padding:11px 18px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; margin-right:10px; margin-bottom:10px; }
+  .btn.primary { background:var(--accent); color:#fff; }
+  .btn.ghost { border:1px solid var(--line); color:var(--ink); }
+  section { padding: 56px 0; border-top:1px solid var(--line); }
+  section h2 { font-size: 26px; margin: 0 0 8px; }
+  section .sub { color: var(--muted); margin: 0 0 32px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
+  .card { border:1px solid var(--line); border-radius:12px; padding:24px; background:#fff; display:flex; flex-direction:column; }
+  .card .tag { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); font-weight:700; margin-bottom:8px; }
+  .card h3 { margin:0 0 8px; font-size:20px; }
+  .card p { margin:0 0 14px; color:var(--muted); font-size:15px; }
+  .card ul { margin:0 0 16px; padding-left:18px; color:var(--muted); font-size:15px; }
+  .card ul li { margin-bottom:4px; }
+  .card .link { margin-top:auto; font-weight:600; text-decoration:none; }
+  .card .link.pending { color: var(--muted); font-weight:400; font-style:italic; }
+  .skills { display:flex; flex-wrap:wrap; gap:8px; }
+  .skills span { background:var(--soft); border:1px solid var(--line); padding:6px 12px; border-radius:999px; font-size:14px; }
+  .timeline div { padding:14px 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns: 180px 1fr; gap:16px; }
+  .timeline div:last-child { border-bottom:none; }
+  .timeline .when { color:var(--muted); font-size:14px; }
+  .timeline .what strong { display:block; }
+  .timeline .what span { color:var(--muted); font-size:15px; }
+  footer { border-top:1px solid var(--line); padding:32px 0; color:var(--muted); font-size:14px; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 30px; }
+    nav a { margin-left:12px; font-size:14px; }
+    .timeline div { grid-template-columns: 1fr; gap:4px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Jason Somera</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Social media, marketing automation, and web projects that drive results.</h1>
+    <p class="lead">I'm Jason Clark O. Somera, a marketing and operations professional with over 10 years of experience in social media management, email and workflow automation, CRM data, and customer support. Based in Cebu, Philippines, and available for full-time roles.</p>
+    <a class="btn primary" href="#projects">View projects</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Selected projects</h2>
+      <p class="sub">Websites and campaigns I've designed, built, and run.</p>
+      <div class="grid">
+
+        <article class="card">
+          <div class="tag">Website · 2026</div>
+          <h3>Summit Health Website</h3>
+          <p>A multi-page website for a functional medicine coaching practice, designed to guide visitors from a short application to a discovery call.</p>
+          <ul>
+            <li>Home, programs, application, and thank-you pages</li>
+            <li>Clear path from first visit to discovery call</li>
+            <li>Email automation migrated from Ontraport to GoHighLevel</li>
+          </ul>
+          <a class="link" href="https://www.summit-health.co.uk/" target="_blank" rel="noopener">View live site</a>
+        </article>
+
+        <article class="card">
+          <div class="tag">Web app</div>
+          <h3>Challenge Match Day</h3>
+          <p>A scoring, draw, and scheduling tool for badminton and pickleball tournaments, with an on-court queuing system.</p>
+          <ul>
+            <li>Live scoring for badminton and pickleball matches</li>
+            <li>Draw and game schedule builder for tournaments</li>
+            <li>Queuing tool to manage games on court</li>
+          </ul>
+          <a class="link" href="https://challengematchday.vercel.app/" target="_blank" rel="noopener">View live app</a>
+        </article>
+
+        <article class="card">
+          <div class="tag">Automation · 2026</div>
+          <h3>Marketing Automation Migration</h3>
+          <p>Moved workflows, email sequences, and contact tags from Ontraport to GoHighLevel, then built new nurture campaigns on the new platform.</p>
+          <ul>
+            <li>Built Ontraport automations, funnels, email marketing, and booking calendars before the move</li>
+            <li>Workflow and email sequence rebuild in GoHighLevel</li>
+            <li>Lead nurture campaigns toward applications</li>
+            <li>Moved over 13,000 leads to the new platform</li>
+          </ul>
+          <a class="link pending" href="#contact">Ask me about this project</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">Roles from 2014 to the present.</p>
+      <div class="timeline">
+        <div>
+          <div class="when">Dec 2023 – Present</div>
+          <div class="what"><strong>Social Media Coordinator, Summit Health</strong><span>Part-time. Instagram management, lead generation, website build, email automation, and AI-assisted content creation.</span></div>
+        </div>
+        <div>
+          <div class="when">Aug 2018 – Nov 2026</div>
+          <div class="what"><strong>Social Media Coordinator, Keller Williams Realty / MAPS Coaching</strong><span>Part-time. CRM data management in Zoho and KW Command, social media scheduling, and email marketing.</span></div>
+        </div>
+        <div>
+          <div class="when">Dec 2020 – Jun 2023</div>
+          <div class="what"><strong>Social Media Coordinator, Jerome Holder Fitness</strong><span>Part-time. Instagram lead generation, direct messaging, paid ads, and content automation with Zapier and Repurpose.io.</span></div>
+        </div>
+        <div>
+          <div class="when">May – Nov 2018</div>
+          <div class="what"><strong>Social Media Marketing Virtual Assistant, Larviks Investment LLC</strong><span>Facebook Messenger funnels with ManyChat and Zapier, Facebook ad campaigns, and Instagram and Facebook page management.</span></div>
+        </div>
+        <div>
+          <div class="when">Apr 2017 – May 2018</div>
+          <div class="what"><strong>Virtual Admin Assistant, Wellness &amp; Lifestyle Australia</strong><span>Client service, administrative support, and executive summaries of client outcomes.</span></div>
+        </div>
+        <div>
+          <div class="when">Jul 2014 – Feb 2017</div>
+          <div class="what"><strong>Subject Matter Expert, Support Tier 2, Convergys Cebu</strong><span>Payroll and accounting support for clients, QuickBooks troubleshooting, and real-time ticket documentation. Top SME certification (2016).</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills and tools</h2>
+      <p class="sub">Tools I use day to day.</p>
+      <div class="skills">
+        <span>Web Development</span><span>Responsive Web App Design</span><span>Vercel Deployment</span><span>Tournament and Scheduling Tools</span>
+        <span>Instagram</span><span>Facebook Ads</span><span>ManyChat</span><span>GoHighLevel</span><span>Ontraport</span><span>Zapier</span><span>Repurpose.io</span><span>MailChimp</span><span>Zoho CRM</span><span>KW Command</span><span>Google Workspace</span><span>Canva</span><span>QuickBooks</span><span>Claude</span><span>ChatGPT</span><span>Google Gemini</span><span>Midjourney</span><span>D-ID</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="sub">Open to full-time marketing, social media, and operations roles.</p>
+      <p><a href="mailto:jc.aremos@gmail.com">jc.aremos@gmail.com</a><br><a href="https://wa.me/639687172797" target="_blank" rel="noopener">WhatsApp: +63 968 717 2797</a></p>
+      <p><a href="#">Resume (PDF)</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Jason Clark O. Somera</span>
+    <span>Mandaue City, Cebu, Philippines</span>
+  </div>
+</footer>
+
+</body>
+</html>
