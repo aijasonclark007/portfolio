@@ -19,6 +19,13 @@
   nav a:hover { color:var(--accent); }
   .hero { padding: 80px 0 56px; }
   .hero h1 { font-size: 40px; line-height:1.15; margin:0 0 12px; letter-spacing:-0.01em; }
+  .hero-inner { display:flex; align-items:center; justify-content:space-between; gap:48px; }
+  .hero-text { flex:1; min-width:0; }
+  .headshot { width: 300px; height: auto; border-radius: 16px; flex-shrink: 0; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+  @media (max-width: 760px) {
+    .hero-inner { flex-direction: column-reverse; align-items:flex-start; }
+    .headshot { width: 220px; }
+  }
   .hero p.lead { font-size: 19px; color: var(--muted); max-width: 680px; margin: 0 0 24px; }
   .btn { display:inline-block; padding:11px 18px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; margin-right:10px; margin-bottom:10px; }
   .btn.primary { background:var(--accent); color:#fff; }
@@ -67,10 +74,15 @@
 
 <main id="top">
   <div class="wrap hero">
+    <div class="hero-inner">
+    <div class="hero-text">
     <h1>Social media, marketing automation, and web projects that drive results.</h1>
-    <p class="lead">I'm Jason Clark O. Somera, a marketing and operations professional with over 10 years of experience in social media management, email and workflow automation, CRM data, and customer support. Based in Cebu, Philippines, and available for full-time roles.</p>
+    <p class="lead">I'm Jason Clark O. Somera, an AI-driven Virtual Assistant with over 10 years of experience in administration, customer success, and marketing automation. I use Claude, ChatGPT, and Google Gemini to draft content, create image and video concepts, and streamline workflows. Based in Cebu, Philippines, and available for full-time roles.</p>
     <a class="btn primary" href="#projects">View projects</a>
     <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <img class="headshot" src="headshot.jpg" alt="Jason Clark O. Somera, professional headshot" width="300" height="394">
+    </div>
   </div>
 
   <section id="projects">
