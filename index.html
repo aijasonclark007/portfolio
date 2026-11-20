@@ -56,6 +56,27 @@
     nav a { margin-left:12px; font-size:14px; }
     .timeline div { grid-template-columns: 1fr; gap:4px; }
   }
+
+  /* Mobile fixes for phones such as iPhone 14 Pro Max (430px wide) */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    header.top .wrap { height: auto; min-height: 56px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; gap: 6px 0; }
+    header.top nav { width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    nav a { margin-left: 0; font-size: 14px; }
+    .hero { padding: 36px 0 32px; }
+    .hero h1 { font-size: 26px; line-height: 1.2; overflow-wrap: break-word; }
+    .hero p.lead { font-size: 16px; }
+    .hero-inner { align-items: center; text-align: left; }
+    .hero-text { width: 100%; }
+    .headshot { width: 100%; max-width: 280px; height: auto; margin: 0 auto 8px; display: block; }
+    .btn { display: block; text-align: center; margin: 0 0 10px 0; }
+    section { padding: 40px 0; }
+    section h2 { font-size: 22px; }
+    .grid { grid-template-columns: 1fr; }
+    .card { padding: 20px; }
+    .timeline div { grid-template-columns: 1fr; gap: 4px; }
+    footer .wrap { flex-direction: column; gap: 6px; }
+  }
 </style>
 </head>
 <body>
