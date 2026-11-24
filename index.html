@@ -77,6 +77,16 @@
     .timeline div { grid-template-columns: 1fr; gap: 4px; }
     footer .wrap { flex-direction: column; gap: 6px; }
   }
+
+  .video-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
+  .video-card { border:1px solid var(--line); border-radius:12px; overflow:hidden; background:#fff; }
+  .video-frame { position:relative; width:100%; aspect-ratio:16/9; background:#000; cursor:pointer; }
+  .video-frame img { width:100%; height:100%; object-fit:cover; display:block; }
+  .video-frame .play { position:absolute; inset:0; margin:auto; width:64px; height:64px; border-radius:50%; background:rgba(0,0,0,.6); color:#fff; font-size:26px; display:flex; align-items:center; justify-content:center; }
+  .video-frame iframe { width:100%; height:100%; border:0; display:block; }
+  .video-card .caption { padding:16px 18px; }
+  .video-card .caption h3 { margin:0 0 4px; font-size:17px; }
+  .video-card .caption p { margin:0; color:var(--muted); font-size:14px; }
 </style>
 </head>
 <body>
@@ -86,6 +96,7 @@
     <a class="brand" href="#top">Jason Somera</a>
     <nav>
       <a href="#projects">Projects</a>
+      <a href="#videos">Videos</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -169,6 +180,30 @@
     </div>
   </section>
 
+
+  <section id="videos">
+    <div class="wrap">
+      <h2>Video work</h2>
+      <p class="sub">Click a video to play it.</p>
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="video-frame" data-yt="mMtXKNay_s8">
+            <img src="https://img.youtube.com/vi/mMtXKNay_s8/hqdefault.jpg" alt="Video sample 1">
+            <span class="play">&#9654;</span>
+          </div>
+          <div class="caption"><h3>Video sample 1</h3><p>Short-form video produced for social media.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="video-frame" data-yt="bsNy9GWgMl4">
+            <img src="https://img.youtube.com/vi/bsNy9GWgMl4/hqdefault.jpg" alt="Video sample 2">
+            <span class="play">&#9654;</span>
+          </div>
+          <div class="caption"><h3>Video sample 2</h3><p>Short-form video produced for social media.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="experience">
     <div class="wrap">
       <h2>Experience</h2>
@@ -235,5 +270,20 @@
   </div>
 </footer>
 
+
+<script>
+  document.querySelectorAll('.video-frame[data-yt]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var id = el.getAttribute('data-yt');
+      var frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      el.innerHTML = '';
+      el.appendChild(frame);
+      el.style.cursor = 'default';
+    });
+  });
+</script>
 </body>
 </html>
